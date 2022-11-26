@@ -10,21 +10,11 @@ using System.Windows.Forms;
 
 namespace Examen_Qcm
 {
-    public partial class Form1 : Form
+    public partial class QCM : Form
     {
-        public Form1()
+        public QCM()
         {
             InitializeComponent();
-        }
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }
