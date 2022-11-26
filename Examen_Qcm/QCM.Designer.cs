@@ -42,6 +42,8 @@
             this.btn_modifier = new System.Windows.Forms.Button();
             this.btn_annuler = new System.Windows.Forms.Button();
             this.btn_confirmer = new System.Windows.Forms.Button();
+            this.txtbox_p4 = new System.Windows.Forms.TextBox();
+            this.proposition4_qcm = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // txtbox_numero_question
@@ -113,6 +115,7 @@
             this.proposition3_qcm.Size = new System.Drawing.Size(68, 13);
             this.proposition3_qcm.TabIndex = 12;
             this.proposition3_qcm.Text = "Proposition 3";
+            this.proposition3_qcm.Click += new System.EventHandler(this.proposition3_qcm_Click);
             // 
             // txtbox_p1
             // 
@@ -154,6 +157,7 @@
             this.btn_annuler.TabIndex = 17;
             this.btn_annuler.Text = "Annuler";
             this.btn_annuler.UseVisualStyleBackColor = false;
+            this.btn_annuler.Click += new System.EventHandler(this.btn_annuler_Click);
             // 
             // btn_confirmer
             // 
@@ -164,6 +168,23 @@
             this.btn_confirmer.TabIndex = 16;
             this.btn_confirmer.Text = "Confirmer";
             this.btn_confirmer.UseVisualStyleBackColor = false;
+            this.btn_confirmer.Click += new System.EventHandler(this.btn_confirmer_Click);
+            // 
+            // txtbox_p4
+            // 
+            this.txtbox_p4.Location = new System.Drawing.Point(138, 329);
+            this.txtbox_p4.Name = "txtbox_p4";
+            this.txtbox_p4.Size = new System.Drawing.Size(179, 20);
+            this.txtbox_p4.TabIndex = 19;
+            // 
+            // proposition4_qcm
+            // 
+            this.proposition4_qcm.AutoSize = true;
+            this.proposition4_qcm.Location = new System.Drawing.Point(12, 332);
+            this.proposition4_qcm.Name = "proposition4_qcm";
+            this.proposition4_qcm.Size = new System.Drawing.Size(68, 13);
+            this.proposition4_qcm.TabIndex = 20;
+            this.proposition4_qcm.Text = "Proposition 4";
             // 
             // QCM
             // 
@@ -171,6 +192,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(827, 425);
+            this.Controls.Add(this.proposition4_qcm);
+            this.Controls.Add(this.txtbox_p4);
             this.Controls.Add(this.btn_modifier);
             this.Controls.Add(this.btn_annuler);
             this.Controls.Add(this.btn_confirmer);
@@ -208,5 +231,7 @@
         private System.Windows.Forms.Button btn_modifier;
         private System.Windows.Forms.Button btn_annuler;
         private System.Windows.Forms.Button btn_confirmer;
+        private System.Windows.Forms.TextBox txtbox_p4;
+        private System.Windows.Forms.Label proposition4_qcm;
     }
 }

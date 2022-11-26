@@ -26,5 +26,10 @@ namespace Examen_Qcm
         {
 
         }
+
+        private void btn_confirmer_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
