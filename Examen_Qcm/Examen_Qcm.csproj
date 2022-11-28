@@ -60,6 +60,18 @@
     <Compile Include="QCM.Designer.cs">
       <DependentUpon>QCM.cs</DependentUpon>
     </Compile>
+    <Compile Include="Question_Dichotomique.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Question_Dichotomique.Designer.cs">
+      <DependentUpon>Question_Dichotomique.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Question_simple.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Question_simple.Designer.cs">
+      <DependentUpon>Question_simple.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -74,6 +86,12 @@
     </Compile>
     <EmbeddedResource Include="QCM.resx">
       <DependentUpon>QCM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Question_Dichotomique.resx">
+      <DependentUpon>Question_Dichotomique.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Question_simple.resx">
+      <DependentUpon>Question_simple.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

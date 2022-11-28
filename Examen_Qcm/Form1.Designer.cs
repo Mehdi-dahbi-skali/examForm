@@ -39,26 +39,24 @@
             this.radio_dicho = new System.Windows.Forms.RadioButton();
             this.radio_question = new System.Windows.Forms.RadioButton();
             this.btn_ajouter_question = new System.Windows.Forms.Button();
-            this.btn_confirmer = new System.Windows.Forms.Button();
             this.btn_annuler = new System.Windows.Forms.Button();
-            this.btn_modifier = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // evaluation
             // 
             this.evaluation.AutoSize = true;
-            this.evaluation.Location = new System.Drawing.Point(29, 47);
+            this.evaluation.Font = new System.Drawing.Font("Modern No. 20", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.evaluation.ForeColor = System.Drawing.Color.Red;
+            this.evaluation.Location = new System.Drawing.Point(325, 9);
             this.evaluation.Name = "evaluation";
-            this.evaluation.Size = new System.Drawing.Size(45, 13);
+            this.evaluation.Size = new System.Drawing.Size(187, 50);
             this.evaluation.TabIndex = 0;
             this.evaluation.Text = "Examen";
             // 
             // txt_titre
             // 
             this.txt_titre.AutoSize = true;
-            this.txt_titre.Location = new System.Drawing.Point(38, 88);
+            this.txt_titre.Location = new System.Drawing.Point(40, 129);
             this.txt_titre.Name = "txt_titre";
             this.txt_titre.Size = new System.Drawing.Size(88, 13);
             this.txt_titre.TabIndex = 1;
@@ -67,7 +65,7 @@
             // txt_numero
             // 
             this.txt_numero.AutoSize = true;
-            this.txt_numero.Location = new System.Drawing.Point(38, 122);
+            this.txt_numero.Location = new System.Drawing.Point(40, 88);
             this.txt_numero.Name = "txt_numero";
             this.txt_numero.Size = new System.Drawing.Size(79, 13);
             this.txt_numero.TabIndex = 2;
@@ -75,27 +73,28 @@
             // 
             // txtbox_numero
             // 
-            this.txtbox_numero.Location = new System.Drawing.Point(149, 119);
+            this.txtbox_numero.Location = new System.Drawing.Point(138, 85);
             this.txtbox_numero.Name = "txtbox_numero";
-            this.txtbox_numero.Size = new System.Drawing.Size(179, 20);
+            this.txtbox_numero.Size = new System.Drawing.Size(374, 20);
             this.txtbox_numero.TabIndex = 3;
             // 
             // txtbox_title
             // 
-            this.txtbox_title.Location = new System.Drawing.Point(149, 85);
+            this.txtbox_title.Location = new System.Drawing.Point(138, 126);
             this.txtbox_title.Name = "txtbox_title";
-            this.txtbox_title.Size = new System.Drawing.Size(179, 20);
+            this.txtbox_title.Size = new System.Drawing.Size(374, 20);
             this.txtbox_title.TabIndex = 4;
             // 
             // btn_ajouter_examen
             // 
             this.btn_ajouter_examen.BackColor = System.Drawing.Color.Chartreuse;
-            this.btn_ajouter_examen.Location = new System.Drawing.Point(208, 154);
+            this.btn_ajouter_examen.Location = new System.Drawing.Point(392, 172);
             this.btn_ajouter_examen.Name = "btn_ajouter_examen";
             this.btn_ajouter_examen.Size = new System.Drawing.Size(120, 38);
             this.btn_ajouter_examen.TabIndex = 5;
             this.btn_ajouter_examen.Text = "Ajouter un examen";
             this.btn_ajouter_examen.UseVisualStyleBackColor = false;
+            this.btn_ajouter_examen.Click += new System.EventHandler(this.btn_ajouter_examen_Click);
             // 
             // txt_choix
             // 
@@ -116,6 +115,7 @@
             this.radio_qcm.TabStop = true;
             this.radio_qcm.Text = "QCM";
             this.radio_qcm.UseVisualStyleBackColor = true;
+            this.radio_qcm.CheckedChanged += new System.EventHandler(this.radio_qcm_CheckedChanged);
             // 
             // radio_dicho
             // 
@@ -142,51 +142,25 @@
             // btn_ajouter_question
             // 
             this.btn_ajouter_question.BackColor = System.Drawing.Color.Chartreuse;
-            this.btn_ajouter_question.Location = new System.Drawing.Point(208, 377);
+            this.btn_ajouter_question.Location = new System.Drawing.Point(392, 368);
             this.btn_ajouter_question.Name = "btn_ajouter_question";
             this.btn_ajouter_question.Size = new System.Drawing.Size(120, 38);
             this.btn_ajouter_question.TabIndex = 10;
             this.btn_ajouter_question.Text = "Ajouter des questions";
             this.btn_ajouter_question.UseVisualStyleBackColor = false;
-            // 
-            // btn_confirmer
-            // 
-            this.btn_confirmer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.btn_confirmer.Location = new System.Drawing.Point(32, 426);
-            this.btn_confirmer.Name = "btn_confirmer";
-            this.btn_confirmer.Size = new System.Drawing.Size(75, 23);
-            this.btn_confirmer.TabIndex = 11;
-            this.btn_confirmer.Text = "Confirmer";
-            this.btn_confirmer.UseVisualStyleBackColor = false;
-            this.btn_confirmer.Click += new System.EventHandler(this.btn_confirmer_Click);
+            this.btn_ajouter_question.Click += new System.EventHandler(this.btn_ajouter_question_Click);
             // 
             // btn_annuler
             // 
-            this.btn_annuler.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.btn_annuler.Location = new System.Drawing.Point(253, 426);
+            this.btn_annuler.BackColor = System.Drawing.Color.Red;
+            this.btn_annuler.Font = new System.Drawing.Font("Microsoft Uighur", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_annuler.Location = new System.Drawing.Point(392, 412);
             this.btn_annuler.Name = "btn_annuler";
-            this.btn_annuler.Size = new System.Drawing.Size(75, 23);
+            this.btn_annuler.Size = new System.Drawing.Size(120, 43);
             this.btn_annuler.TabIndex = 12;
             this.btn_annuler.Text = "Annuler";
             this.btn_annuler.UseVisualStyleBackColor = false;
-            // 
-            // btn_modifier
-            // 
-            this.btn_modifier.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.btn_modifier.Location = new System.Drawing.Point(138, 426);
-            this.btn_modifier.Name = "btn_modifier";
-            this.btn_modifier.Size = new System.Drawing.Size(75, 23);
-            this.btn_modifier.TabIndex = 13;
-            this.btn_modifier.Text = "Modifier";
-            this.btn_modifier.UseVisualStyleBackColor = false;
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(389, 47);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(575, 402);
-            this.dataGridView1.TabIndex = 14;
+            this.btn_annuler.Click += new System.EventHandler(this.btn_annuler_Click);
             // 
             // Form1
             // 
@@ -194,10 +168,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(975, 467);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.btn_modifier);
             this.Controls.Add(this.btn_annuler);
-            this.Controls.Add(this.btn_confirmer);
             this.Controls.Add(this.btn_ajouter_question);
             this.Controls.Add(this.radio_question);
             this.Controls.Add(this.radio_dicho);
@@ -213,7 +184,6 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -232,10 +202,7 @@
         private System.Windows.Forms.RadioButton radio_dicho;
         private System.Windows.Forms.RadioButton radio_question;
         private System.Windows.Forms.Button btn_ajouter_question;
-        private System.Windows.Forms.Button btn_confirmer;
         private System.Windows.Forms.Button btn_annuler;
-        private System.Windows.Forms.Button btn_modifier;
-        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }
 
