@@ -41,15 +41,20 @@ namespace Examen_Qcm
                 try
                 {
                     cnx.Open();
-                    if (radio_vrai.Checked)
-                    {
-                        radio_vrai. Text = "true";
-                    }
-                    else
-                        radio_faux.Text= "false";
+                   
                     SqlCommand cmd = new SqlCommand("insert into Question_dicho(Numero,Question,Proposition_v,Proposition_f) values" +
                         "('" + txtbox_numero_question.Text + "','" + txtbox_question_dicho.Text + "','"
-                        + radio_vrai.Text + "','" + radio_faux.Text + "')", cnx);
+                        + radio_vrai.Checked + "','" + radio_faux.Checked + "')", cnx);
+                    if (radio_vrai.Checked)
+                    {
+                        radio_vrai.Checked = true;
+                        radio_faux.Checked = false;
+                    }
+                    else
+                    {
+                        radio_vrai.Checked = false;
+                        radio_faux.Checked = true;
+                    }
                     cmd.ExecuteNonQuery();
                     MessageBox.Show("Question bien enregistré ");
                     cnx.Close();
