@@ -1,6 +1,6 @@
 ﻿namespace Examen_Qcm
 {
-    partial class Question_simple
+    partial class Question_ouvert
     {
         /// <summary>
         /// Required designer variable.
@@ -43,16 +43,16 @@
             // 
             this.proposition4_qcm.AutoSize = true;
             this.proposition4_qcm.Font = new System.Drawing.Font("MingLiU_HKSCS-ExtB", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.proposition4_qcm.Location = new System.Drawing.Point(105, 229);
+            this.proposition4_qcm.Location = new System.Drawing.Point(17, 173);
             this.proposition4_qcm.Name = "proposition4_qcm";
-            this.proposition4_qcm.Size = new System.Drawing.Size(174, 19);
+            this.proposition4_qcm.Size = new System.Drawing.Size(86, 19);
             this.proposition4_qcm.TabIndex = 47;
-            this.proposition4_qcm.Text = "La Proposition:";
+            this.proposition4_qcm.Text = "repence";
             // 
             // btn_annuler
             // 
-            this.btn_annuler.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.btn_annuler.Location = new System.Drawing.Point(387, 376);
+            this.btn_annuler.BackColor = System.Drawing.Color.White;
+            this.btn_annuler.Location = new System.Drawing.Point(220, 258);
             this.btn_annuler.Name = "btn_annuler";
             this.btn_annuler.Size = new System.Drawing.Size(129, 33);
             this.btn_annuler.TabIndex = 45;
@@ -62,8 +62,8 @@
             // 
             // btn_confirmer
             // 
-            this.btn_confirmer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.btn_confirmer.Location = new System.Drawing.Point(179, 376);
+            this.btn_confirmer.BackColor = System.Drawing.Color.White;
+            this.btn_confirmer.Location = new System.Drawing.Point(12, 258);
             this.btn_confirmer.Name = "btn_confirmer";
             this.btn_confirmer.Size = new System.Drawing.Size(126, 33);
             this.btn_confirmer.TabIndex = 44;
@@ -73,7 +73,7 @@
             // 
             // txtbox_question
             // 
-            this.txtbox_question.Location = new System.Drawing.Point(250, 164);
+            this.txtbox_question.Location = new System.Drawing.Point(83, 125);
             this.txtbox_question.Name = "txtbox_question";
             this.txtbox_question.Size = new System.Drawing.Size(331, 20);
             this.txtbox_question.TabIndex = 43;
@@ -81,7 +81,7 @@
             // txtbox_n
             // 
             this.txtbox_n.AutoSize = true;
-            this.txtbox_n.Location = new System.Drawing.Point(105, 130);
+            this.txtbox_n.Location = new System.Drawing.Point(18, 83);
             this.txtbox_n.Name = "txtbox_n";
             this.txtbox_n.Size = new System.Drawing.Size(102, 13);
             this.txtbox_n.TabIndex = 42;
@@ -90,7 +90,7 @@
             // txt_question
             // 
             this.txt_question.AutoSize = true;
-            this.txt_question.Location = new System.Drawing.Point(105, 171);
+            this.txt_question.Location = new System.Drawing.Point(18, 132);
             this.txt_question.Name = "txt_question";
             this.txt_question.Size = new System.Drawing.Size(49, 13);
             this.txt_question.TabIndex = 41;
@@ -99,34 +99,34 @@
             // txt_titre
             // 
             this.txt_titre.AutoSize = true;
-            this.txt_titre.Font = new System.Drawing.Font("Modern No. 20", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_titre.ForeColor = System.Drawing.Color.Red;
-            this.txt_titre.Location = new System.Drawing.Point(198, 42);
+            this.txt_titre.Font = new System.Drawing.Font("Monoton", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_titre.ForeColor = System.Drawing.Color.LightGray;
+            this.txt_titre.Location = new System.Drawing.Point(89, 9);
             this.txt_titre.Name = "txt_titre";
-            this.txt_titre.Size = new System.Drawing.Size(352, 50);
+            this.txt_titre.Size = new System.Drawing.Size(229, 54);
             this.txt_titre.TabIndex = 40;
-            this.txt_titre.Text = "Question Simple";
+            this.txt_titre.Text = "Question";
             // 
             // txtbox_numero
             // 
-            this.txtbox_numero.Location = new System.Drawing.Point(250, 127);
+            this.txtbox_numero.Location = new System.Drawing.Point(163, 80);
             this.txtbox_numero.Name = "txtbox_numero";
-            this.txtbox_numero.Size = new System.Drawing.Size(331, 20);
+            this.txtbox_numero.Size = new System.Drawing.Size(66, 20);
             this.txtbox_numero.TabIndex = 39;
             // 
             // textBox_prp
             // 
-            this.textBox_prp.Location = new System.Drawing.Point(108, 277);
+            this.textBox_prp.Location = new System.Drawing.Point(12, 206);
             this.textBox_prp.Name = "textBox_prp";
-            this.textBox_prp.Size = new System.Drawing.Size(500, 20);
+            this.textBox_prp.Size = new System.Drawing.Size(422, 20);
             this.textBox_prp.TabIndex = 48;
             // 
-            // Question_simple
+            // Question_ouvert
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.ClientSize = new System.Drawing.Size(447, 351);
             this.Controls.Add(this.textBox_prp);
             this.Controls.Add(this.proposition4_qcm);
             this.Controls.Add(this.btn_annuler);
@@ -136,7 +136,7 @@
             this.Controls.Add(this.txt_question);
             this.Controls.Add(this.txt_titre);
             this.Controls.Add(this.txtbox_numero);
-            this.Name = "Question_simple";
+            this.Name = "Question_ouvert";
             this.Text = "Question_simple";
             this.ResumeLayout(false);
             this.PerformLayout();

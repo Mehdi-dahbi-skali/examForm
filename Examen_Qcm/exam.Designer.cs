@@ -1,6 +1,6 @@
 ﻿namespace Examen_Qcm
 {
-    partial class Form1
+    partial class exam
     {
         /// <summary>
         /// Required designer variable.
@@ -45,70 +45,73 @@
             // evaluation
             // 
             this.evaluation.AutoSize = true;
-            this.evaluation.Font = new System.Drawing.Font("Modern No. 20", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.evaluation.ForeColor = System.Drawing.Color.Red;
-            this.evaluation.Location = new System.Drawing.Point(325, 9);
+            this.evaluation.Font = new System.Drawing.Font("Montserrat", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.evaluation.ForeColor = System.Drawing.Color.RoyalBlue;
+            this.evaluation.Location = new System.Drawing.Point(33, 19);
             this.evaluation.Name = "evaluation";
-            this.evaluation.Size = new System.Drawing.Size(187, 50);
+            this.evaluation.Size = new System.Drawing.Size(273, 48);
             this.evaluation.TabIndex = 0;
-            this.evaluation.Text = "Examen";
+            this.evaluation.Text = "Ajouter EXAM";
+            this.evaluation.Click += new System.EventHandler(this.evaluation_Click);
             // 
             // txt_titre
             // 
             this.txt_titre.AutoSize = true;
-            this.txt_titre.Location = new System.Drawing.Point(40, 129);
+            this.txt_titre.Location = new System.Drawing.Point(26, 129);
             this.txt_titre.Name = "txt_titre";
-            this.txt_titre.Size = new System.Drawing.Size(88, 13);
+            this.txt_titre.Size = new System.Drawing.Size(28, 13);
             this.txt_titre.TabIndex = 1;
-            this.txt_titre.Text = "Titre de l\'Examen";
+            this.txt_titre.Text = "Titre";
             // 
             // txt_numero
             // 
             this.txt_numero.AutoSize = true;
-            this.txt_numero.Location = new System.Drawing.Point(40, 88);
+            this.txt_numero.Location = new System.Drawing.Point(26, 88);
             this.txt_numero.Name = "txt_numero";
-            this.txt_numero.Size = new System.Drawing.Size(79, 13);
+            this.txt_numero.Size = new System.Drawing.Size(29, 13);
             this.txt_numero.TabIndex = 2;
-            this.txt_numero.Text = "N° de l\'Examen";
+            this.txt_numero.Text = "Num";
+            this.txt_numero.Click += new System.EventHandler(this.txt_numero_Click);
             // 
             // txtbox_numero
             // 
-            this.txtbox_numero.Location = new System.Drawing.Point(138, 85);
+            this.txtbox_numero.Location = new System.Drawing.Point(124, 85);
             this.txtbox_numero.Name = "txtbox_numero";
-            this.txtbox_numero.Size = new System.Drawing.Size(374, 20);
+            this.txtbox_numero.Size = new System.Drawing.Size(50, 20);
             this.txtbox_numero.TabIndex = 3;
             // 
             // txtbox_title
             // 
-            this.txtbox_title.Location = new System.Drawing.Point(138, 126);
+            this.txtbox_title.Location = new System.Drawing.Point(124, 126);
             this.txtbox_title.Name = "txtbox_title";
-            this.txtbox_title.Size = new System.Drawing.Size(374, 20);
+            this.txtbox_title.Size = new System.Drawing.Size(194, 20);
             this.txtbox_title.TabIndex = 4;
             // 
             // btn_ajouter_examen
             // 
-            this.btn_ajouter_examen.BackColor = System.Drawing.Color.Chartreuse;
-            this.btn_ajouter_examen.Location = new System.Drawing.Point(392, 172);
+            this.btn_ajouter_examen.BackColor = System.Drawing.Color.Beige;
+            this.btn_ajouter_examen.Location = new System.Drawing.Point(29, 166);
             this.btn_ajouter_examen.Name = "btn_ajouter_examen";
-            this.btn_ajouter_examen.Size = new System.Drawing.Size(120, 38);
+            this.btn_ajouter_examen.Size = new System.Drawing.Size(78, 33);
             this.btn_ajouter_examen.TabIndex = 5;
-            this.btn_ajouter_examen.Text = "Ajouter un examen";
+            this.btn_ajouter_examen.Text = "Ajouter";
             this.btn_ajouter_examen.UseVisualStyleBackColor = false;
             this.btn_ajouter_examen.Click += new System.EventHandler(this.btn_ajouter_examen_Click);
             // 
             // txt_choix
             // 
             this.txt_choix.AutoSize = true;
-            this.txt_choix.Location = new System.Drawing.Point(38, 240);
+            this.txt_choix.Location = new System.Drawing.Point(38, 214);
             this.txt_choix.Name = "txt_choix";
-            this.txt_choix.Size = new System.Drawing.Size(140, 13);
+            this.txt_choix.Size = new System.Drawing.Size(64, 13);
             this.txt_choix.TabIndex = 6;
-            this.txt_choix.Text = "Choisir le type des questions";
+            this.txt_choix.Text = "type d exam";
+            this.txt_choix.Click += new System.EventHandler(this.txt_choix_Click);
             // 
             // radio_qcm
             // 
             this.radio_qcm.AutoSize = true;
-            this.radio_qcm.Location = new System.Drawing.Point(23, 273);
+            this.radio_qcm.Location = new System.Drawing.Point(41, 242);
             this.radio_qcm.Name = "radio_qcm";
             this.radio_qcm.Size = new System.Drawing.Size(49, 17);
             this.radio_qcm.TabIndex = 7;
@@ -120,29 +123,30 @@
             // radio_dicho
             // 
             this.radio_dicho.AutoSize = true;
-            this.radio_dicho.Location = new System.Drawing.Point(23, 353);
+            this.radio_dicho.Location = new System.Drawing.Point(41, 281);
             this.radio_dicho.Name = "radio_dicho";
-            this.radio_dicho.Size = new System.Drawing.Size(133, 17);
+            this.radio_dicho.Size = new System.Drawing.Size(122, 17);
             this.radio_dicho.TabIndex = 8;
             this.radio_dicho.TabStop = true;
-            this.radio_dicho.Text = "Question dichotomique";
+            this.radio_dicho.Text = "Question avec choix";
             this.radio_dicho.UseVisualStyleBackColor = true;
             // 
             // radio_question
             // 
             this.radio_question.AutoSize = true;
-            this.radio_question.Location = new System.Drawing.Point(23, 315);
+            this.radio_question.Location = new System.Drawing.Point(109, 242);
             this.radio_question.Name = "radio_question";
             this.radio_question.Size = new System.Drawing.Size(96, 17);
             this.radio_question.TabIndex = 9;
             this.radio_question.TabStop = true;
             this.radio_question.Text = "Question direct";
             this.radio_question.UseVisualStyleBackColor = true;
+            this.radio_question.CheckedChanged += new System.EventHandler(this.radio_question_CheckedChanged);
             // 
             // btn_ajouter_question
             // 
-            this.btn_ajouter_question.BackColor = System.Drawing.Color.Chartreuse;
-            this.btn_ajouter_question.Location = new System.Drawing.Point(392, 368);
+            this.btn_ajouter_question.BackColor = System.Drawing.Color.Beige;
+            this.btn_ajouter_question.Location = new System.Drawing.Point(29, 326);
             this.btn_ajouter_question.Name = "btn_ajouter_question";
             this.btn_ajouter_question.Size = new System.Drawing.Size(120, 38);
             this.btn_ajouter_question.TabIndex = 10;
@@ -152,9 +156,10 @@
             // 
             // btn_annuler
             // 
-            this.btn_annuler.BackColor = System.Drawing.Color.Red;
+            this.btn_annuler.BackColor = System.Drawing.Color.Tomato;
             this.btn_annuler.Font = new System.Drawing.Font("Microsoft Uighur", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_annuler.Location = new System.Drawing.Point(392, 412);
+            this.btn_annuler.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btn_annuler.Location = new System.Drawing.Point(215, 326);
             this.btn_annuler.Name = "btn_annuler";
             this.btn_annuler.Size = new System.Drawing.Size(120, 43);
             this.btn_annuler.TabIndex = 12;
@@ -166,8 +171,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(975, 467);
+            this.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.ClientSize = new System.Drawing.Size(347, 386);
             this.Controls.Add(this.btn_annuler);
             this.Controls.Add(this.btn_ajouter_question);
             this.Controls.Add(this.radio_question);

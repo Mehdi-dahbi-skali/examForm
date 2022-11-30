@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace Examen_Qcm
 {
-    public partial class Question_simple : Form
+    public partial class Question_ouvert : Form
     {
-        public Question_simple()
+        public Question_ouvert()
         {
             InitializeComponent();
         }
@@ -23,7 +23,7 @@ namespace Examen_Qcm
             txtbox_question.Text = "";
             textBox_prp.Text = "";
         }
-        SqlConnection cnx = new SqlConnection(@"Data Source=DESKTOP-RG3QUVA\MSSQLSERVER01;Initial Catalog=exam;Integrated Security=True");
+        SqlConnection cnx = new SqlConnection(@"Data Source=DESKTOP-3OPQBL6\SQLEXPRESS;Initial Catalog=examdb;Integrated Security=True");
         private void btn_confirmer_Click(object sender, EventArgs e)
         {
 
@@ -36,7 +36,7 @@ namespace Examen_Qcm
                 try
                 {
                     cnx.Open();
-                    SqlCommand cmd = new SqlCommand(" insert into Question_s(Numero,Question,Mot_cle) values" +
+                    SqlCommand cmd = new SqlCommand(" insert into question_ouvert(id,rep,question) values" +
                         "('" + txtbox_numero.Text + "','" + txtbox_question.Text + 
                         "','"+ textBox_prp.Text + "')", cnx);
                     cmd.ExecuteNonQuery();

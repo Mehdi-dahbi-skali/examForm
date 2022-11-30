@@ -26,20 +26,20 @@ namespace Examen_Qcm
             txtbox_p3.Text = "";
             txtbox_p4.Text = "";
         }
-        SqlConnection cnx = new SqlConnection(@"Data Source=DESKTOP-RG3QUVA\MSSQLSERVER01;Initial Catalog=exam;Integrated Security=True");
-    
+        SqlConnection cnx = new SqlConnection(@"Data Source=DESKTOP-3OPQBL6\SQLEXPRESS;Initial Catalog=examdb;Integrated Security=True");
+
         private void btn_confirmer_Click(object sender, EventArgs e)
         {
             if(txtbox_numero_question.Text == "" || txtbox_question_qcm.Text == "" || txtbox_p1.Text == "" || txtbox_p2.Text == "" || txtbox_p3.Text == "")
             {
-                MessageBox.Show("Compléter les données!!");
+                MessageBox.Show("données incompler");
             }
             else
             {
                 try
                 {   
                     cnx.Open();
-                    SqlCommand cmd = new SqlCommand("insert into Question_qcm(Numero,Question,Proposition_1,Proposition_2,Proposition_3,Proposition_4) values" +
+                    SqlCommand cmd = new SqlCommand("insert into qcm(id,rep1,rep2,rep3,rep4,question,repcorrect) values" +
                         "('" + txtbox_numero_question.Text + "','" + txtbox_question_qcm.Text + "','"
                         + txtbox_p1.Text + "','" + txtbox_p2.Text + "','" + txtbox_p3.Text + "','" + txtbox_p4.Text + "')",cnx);
                     cmd.ExecuteNonQuery();

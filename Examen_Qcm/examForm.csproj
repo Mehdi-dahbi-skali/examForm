@@ -46,11 +46,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="exam.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="exam.Designer.cs">
+      <DependentUpon>exam.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -60,20 +60,20 @@
     <Compile Include="QCM.Designer.cs">
       <DependentUpon>QCM.cs</DependentUpon>
     </Compile>
-    <Compile Include="Question_Dichotomique.cs">
+    <Compile Include="Question_choix.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Question_Dichotomique.Designer.cs">
-      <DependentUpon>Question_Dichotomique.cs</DependentUpon>
+    <Compile Include="Question_choix.Designer.cs">
+      <DependentUpon>Question_choix.cs</DependentUpon>
     </Compile>
-    <Compile Include="Question_simple.cs">
+    <Compile Include="Question_ouvert.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Question_simple.Designer.cs">
-      <DependentUpon>Question_simple.cs</DependentUpon>
+    <Compile Include="Question_ouvert.Designer.cs">
+      <DependentUpon>Question_ouvert.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="exam.resx">
+      <DependentUpon>exam.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -87,11 +87,11 @@
     <EmbeddedResource Include="QCM.resx">
       <DependentUpon>QCM.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Question_Dichotomique.resx">
-      <DependentUpon>Question_Dichotomique.cs</DependentUpon>
+    <EmbeddedResource Include="Question_choix.resx">
+      <DependentUpon>Question_choix.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Question_simple.resx">
-      <DependentUpon>Question_simple.cs</DependentUpon>
+    <EmbeddedResource Include="Question_ouvert.resx">
+      <DependentUpon>Question_ouvert.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

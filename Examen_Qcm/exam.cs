@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace Examen_Qcm
 {
-    public partial class Form1 : Form
+    public partial class exam : Form
     {
-        public Form1()
+        public exam()
         {
             InitializeComponent();
         }
@@ -22,7 +22,7 @@ namespace Examen_Qcm
             txtbox_title.Text = "";
             txtbox_numero.Text = "";
         }
-        SqlConnection cnx = new SqlConnection(@"Data Source=DESKTOP-RG3QUVA\MSSQLSERVER01;Initial Catalog=exam;Integrated Security=True");
+        SqlConnection cnx = new SqlConnection(@"Data Source=DESKTOP-3OPQBL6\SQLEXPRESS;Initial Catalog=examdb;Integrated Security=True");
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -43,16 +43,16 @@ namespace Examen_Qcm
         {
                 if (txtbox_numero.Text == "" || txtbox_title.Text == "")
                 {
-                    MessageBox.Show("Compléter les données!!");
+                    MessageBox.Show("données incomple");
                 }
                 else
                 {
                     try
                     {
                         cnx.Open();
-                        SqlCommand cmd = new SqlCommand("insert into Evaluation (Numero, Titre) values ('" + txtbox_numero.Text + "','" + txtbox_title.Text + "')" ,cnx);
+                        SqlCommand cmd = new SqlCommand("insert into exam (id, title) values ('" + txtbox_numero.Text + "','" + txtbox_title.Text + "')" ,cnx);
                         cmd.ExecuteNonQuery();
-                        MessageBox.Show("Examen bien enregistré ");
+                        MessageBox.Show("Examen cree ");
                         cnx.Close();
                         Reset();
                     }
@@ -73,7 +73,7 @@ namespace Examen_Qcm
         {
             if (txtbox_numero.Text == "" || txtbox_title.Text == "")
             {
-                MessageBox.Show("Ajouter un examen!!");
+                MessageBox.Show("ajouter un exam ");
             }
             else
             {
@@ -87,13 +87,13 @@ namespace Examen_Qcm
                     }
                     if (radio_dicho.Checked)
                     {
-                        Question_Dichotomique qcm = new Question_Dichotomique();
+                        Question_choix qcm = new Question_choix();
                         qcm.Show();
                         btn_ajouter_examen_Click(sender, e);
                     }
                     if (radio_question.Checked)
                     {
-                        Question_simple qcm = new Question_simple();
+                        Question_ouvert qcm = new Question_ouvert();
                         qcm.Show();
                         btn_ajouter_examen_Click(sender, e);
                     }
@@ -109,6 +109,26 @@ namespace Examen_Qcm
         private void btn_annuler_Click(object sender, EventArgs e)
         {
             Reset();
+        }
+
+        private void txt_numero_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txt_choix_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void evaluation_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void radio_question_CheckedChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -16,7 +16,7 @@ namespace Examen_Qcm
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Question_Dichotomique());
+            Application.Run(new exam());
         }
     }
 }

@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace Examen_Qcm
 {
-    public partial class Question_Dichotomique : Form
+    public partial class Question_choix : Form
     {
-        public Question_Dichotomique()
+        public Question_choix()
         {
             InitializeComponent();
         }
@@ -23,7 +23,7 @@ namespace Examen_Qcm
             txtbox_question_dicho.Text = "";
            
         }
-        SqlConnection cnx = new SqlConnection(@"Data Source=DESKTOP-RG3QUVA\MSSQLSERVER01;Initial Catalog=exam;Integrated Security=True");
+        SqlConnection cnx = new SqlConnection(@"Data Source=DESKTOP-3OPQBL6\SQLEXPRESS;Initial Catalog=examdb;Integrated Security=True");
         private void Question_Dichotomique_Load(object sender, EventArgs e)
         {
             
@@ -42,7 +42,7 @@ namespace Examen_Qcm
                 {
                     cnx.Open();
                    
-                    SqlCommand cmd = new SqlCommand("insert into Question_dicho(Numero,Question,Proposition_v,Proposition_f) values" +
+                    SqlCommand cmd = new SqlCommand("insert into question_choix(id,repv,repf,question) values" +
                         "('" + txtbox_numero_question.Text + "','" + txtbox_question_dicho.Text + "','"
                         + radio_vrai.Checked + "','" + radio_faux.Checked + "')", cnx);
                     if (radio_vrai.Checked)

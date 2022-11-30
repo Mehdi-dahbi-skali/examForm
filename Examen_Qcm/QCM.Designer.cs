@@ -51,17 +51,18 @@
             // 
             this.txtbox_numero_question.Location = new System.Drawing.Point(138, 96);
             this.txtbox_numero_question.Name = "txtbox_numero_question";
-            this.txtbox_numero_question.Size = new System.Drawing.Size(292, 20);
+            this.txtbox_numero_question.Size = new System.Drawing.Size(55, 20);
             this.txtbox_numero_question.TabIndex = 5;
             // 
             // txt_titre
             // 
             this.txt_titre.AutoSize = true;
-            this.txt_titre.Font = new System.Drawing.Font("Modern No. 20", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_titre.ForeColor = System.Drawing.Color.Red;
-            this.txt_titre.Location = new System.Drawing.Point(295, 27);
+            this.txt_titre.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.txt_titre.Font = new System.Drawing.Font("Monoton", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_titre.ForeColor = System.Drawing.Color.LightGray;
+            this.txt_titre.Location = new System.Drawing.Point(182, 21);
             this.txt_titre.Name = "txt_titre";
-            this.txt_titre.Size = new System.Drawing.Size(123, 50);
+            this.txt_titre.Size = new System.Drawing.Size(121, 54);
             this.txt_titre.TabIndex = 6;
             this.txt_titre.Text = "QCM";
             // 
@@ -142,9 +143,9 @@
             // btn_modifier
             // 
             this.btn_modifier.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.btn_modifier.Location = new System.Drawing.Point(168, 369);
+            this.btn_modifier.Location = new System.Drawing.Point(199, 371);
             this.btn_modifier.Name = "btn_modifier";
-            this.btn_modifier.Size = new System.Drawing.Size(119, 44);
+            this.btn_modifier.Size = new System.Drawing.Size(71, 25);
             this.btn_modifier.TabIndex = 18;
             this.btn_modifier.Text = "Modifier";
             this.btn_modifier.UseVisualStyleBackColor = false;
@@ -153,9 +154,9 @@
             // btn_annuler
             // 
             this.btn_annuler.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.btn_annuler.Location = new System.Drawing.Point(328, 369);
+            this.btn_annuler.Location = new System.Drawing.Point(359, 371);
             this.btn_annuler.Name = "btn_annuler";
-            this.btn_annuler.Size = new System.Drawing.Size(119, 44);
+            this.btn_annuler.Size = new System.Drawing.Size(71, 25);
             this.btn_annuler.TabIndex = 17;
             this.btn_annuler.Text = "Annuler";
             this.btn_annuler.UseVisualStyleBackColor = false;
@@ -164,9 +165,9 @@
             // btn_confirmer
             // 
             this.btn_confirmer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.btn_confirmer.Location = new System.Drawing.Point(15, 369);
+            this.btn_confirmer.Location = new System.Drawing.Point(46, 371);
             this.btn_confirmer.Name = "btn_confirmer";
-            this.btn_confirmer.Size = new System.Drawing.Size(117, 44);
+            this.btn_confirmer.Size = new System.Drawing.Size(69, 25);
             this.btn_confirmer.TabIndex = 16;
             this.btn_confirmer.Text = "Confirmer";
             this.btn_confirmer.UseVisualStyleBackColor = false;
@@ -202,8 +203,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(827, 425);
+            this.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.ClientSize = new System.Drawing.Size(457, 414);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.proposition4_qcm);
             this.Controls.Add(this.txtbox_p4);
