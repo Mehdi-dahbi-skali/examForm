@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.3.32929.385
+VisualStudioVersion = 17.2.32526.322
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "examFormm", "Examen_Qcm\examFormm.csproj", "{64F7C6D2-0B19-4765-BBBB-945BBB0ED411}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "examFormm", "examFormm.csproj", "{64F7C6D2-0B19-4765-BBBB-945BBB0ED411}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -20,6 +20,6 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {52619F9A-601C-411A-A39B-57FD4F935A0F}
+		SolutionGuid = {FB1648F8-A968-4DD7-898E-D814CED0FFD1}
 	EndGlobalSection
 EndGlobal
